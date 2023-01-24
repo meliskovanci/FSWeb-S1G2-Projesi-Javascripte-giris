@@ -138,9 +138,9 @@ function oyun(oyuncu, bilgisayar){
   } else if ((oyuncu == "Taş" && bilgisayar == "Makas")
 ||(oyuncu == "Makas" && bilgisayar == "Kağıt")
 ||(oyuncu == "Kağıt" && bilgisayar == "Taş")) {
-return 'KAZANDIN!'
+return 'Kazandın!'
 } else {
-  return 'KAYBETTİN!'
+  return 'Kaybettin!'
 }
 }
 
@@ -159,9 +159,10 @@ Aşağdakileri milDonusturucu fonksiyonunu kullanarak yapın:
 */
 
 function milDonusturucu(km){
-return 0,621371 * km;
+  var mile = 0.621371 * km;
+  return mile;
 }
-console.log(milDonusturucu(13))  
+console.log(milDonusturucu(5))  
 
 
 
@@ -195,7 +196,7 @@ Aşağıdakileri cocukSarkisi fonksiyonunda yapın:
 */
 
 function cocukSarkisi(sayi){
-  return sayi  +  " küçük maymun yatakta zıplamış, biri düşüp başını çarpmış  Anne doktoru aramış, Doktor çok kızmış: Bir daha yatakta zıplamak yok!" ;
+  return sayi  +  " küçük maymun yatakta zıplamış, biri düşüp başını çarpmış, Anne doktoru aramış, Doktor çok kızmış: Bir daha yatakta zıplamak yok!" ;
 } 
 for (let i=5 ; i>0 ; i--) {
 console.log(cocukSarkisi(i))
